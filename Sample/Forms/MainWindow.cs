@@ -78,6 +78,7 @@ namespace Sample
                 EventLog.WriteEntry("Exception {0} was thrown.", ex.ToString());
             }
         }
+        
         #endregion
 
         #region Methods
@@ -200,6 +201,5 @@ namespace Sample
         }
 
         #endregion
-
     }
 }

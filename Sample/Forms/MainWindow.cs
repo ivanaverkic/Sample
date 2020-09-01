@@ -177,7 +177,6 @@ namespace Sample
                     return dt;
                 }
 
-                //dynamic json = JsonConvert.DeserializeObject(response);
                 var outer = JToken.Parse(stringResponse);
                 var inner = outer["Realtime Currency Exchange Rate"].Value<JObject>();
 

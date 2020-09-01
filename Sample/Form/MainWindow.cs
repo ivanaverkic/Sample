@@ -78,6 +78,7 @@ namespace Sample
                 EventLog.WriteEntry("Exception {0} was thrown.", ex.ToString());
             }
         }
+        
         #endregion
 
         #region Methods
@@ -176,7 +177,6 @@ namespace Sample
                     return dt;
                 }
 
-                //dynamic json = JsonConvert.DeserializeObject(response);
                 var outer = JToken.Parse(stringResponse);
                 var inner = outer["Realtime Currency Exchange Rate"].Value<JObject>();
 
@@ -200,6 +200,5 @@ namespace Sample
         }
 
         #endregion
-
     }
 }
